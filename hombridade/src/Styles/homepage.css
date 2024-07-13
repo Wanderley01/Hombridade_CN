@@ -1,4 +1,90 @@
 * {
     margin: 0;
-    padding: 0 2%;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
+}
+
+.Page {
+    background-color: aqua;
+    width: 100%;
+}
+
+h1 {
+    font-family: teko;
+}
+
+.menu {
+    background-color: #0E1523;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 5px 1px 5px 10px rgb(255,255,255);
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 50px;
+    transition: width 0.2s, margin-left 0.2s; 
+}
+
+.logo img:hover {
+    width: 83px;
+    margin-left: 55px;
+}
+
+.titulo {
+    color: #74B1C8;
+    font-size: 55px;
+    margin-right: 500px;
+    transition: color 0.1s, font-size 0.1s, margin-right 0.1s; 
+}
+
+.titulo:hover {
+    color: #74B1C8;
+    font-size: 50px;
+    margin-right: 500px;
+}
+
+.itensmenu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.itensmenu li {
+    margin: 0 10px;
+}
+
+.opcao {
+    font-size: 30px;
+    font-family: teko;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+    transition: font-size 0.3s ease, color 0.3s ease; 
+}
+
+.opcao:hover {
+    font-size: 32px;
+    color: #74B1C8;
+}
+
+.opcao::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease; 
+}
+
+.opcao:hover::after {
+    background-color: #74B1C8;
 }
