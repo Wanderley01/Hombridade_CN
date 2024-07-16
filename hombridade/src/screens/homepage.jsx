@@ -1,6 +1,6 @@
 import React from 'react';
 import "../Styles/homepage.css";
-
+import Carrossel from '../components/Carrossel';
 
 function HomePage() {
 
@@ -42,9 +42,11 @@ function HomePage() {
 
                 <div className='slidehead'>
                     <div class="carousel">
-                        
+                        <Carrossel/>
                     </div>
                 </div>
+
+
             </div>
 
 
