@@ -4,6 +4,8 @@
     box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
 }
 
+/* Tudo refernete ao Header da aplicação */
+
 .Page {
     background-color: aqua;
     width: 100%;
@@ -88,3 +90,80 @@ h1 {
 .opcao:hover::after {
     background-color: #74B1C8;
 }
+
+/* Área abaixo do cabeçalho */
+
+.HeaderPage {
+    position: relative; /* Necessário para o posicionamento absoluto dos filhos */
+    background-image: url("../assets/img/fundoheader.png");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 620px;
+    display: flex; /* Utiliza Flexbox para posicionar os filhos */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Garante que o pseudo-elemento não extrapole */
+}
+
+.HeaderPage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ; 
+    z-index: 1; 
+}
+
+.HeaderPage:hover::before {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.fotoinfo, .slidehead {
+    z-index: 5; 
+    margin: 0 400px; 
+}
+
+.fotoinfo {
+    background-color: #74B1C8; /* Cor de fundo para visualização */
+    width: 300px;
+    height: 500px;
+    padding: 10px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    position: relative; /* Necessário para posicionamento do pseudo-elemento */
+    transform: rotate(0); /* Rotaciona o quadrado para formar um losango */
+}
+
+.fotoinfo:hover {
+    padding: 20px;
+    width: 320px;
+    height: 520px;
+}
+
+.fotoinfo::after {
+    content: "Seu texto aqui"; 
+    color: white; 
+    background-color: rgb(0, 0, 0, 0.9); 
+    padding: 55px 110px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px; /* Posição do texto */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease;
+    white-space: nowrap; /* Impede quebra de linha */
+}
+
+.fotoinfo:hover::after {
+    opacity: 1; /* Torna o texto visível no hover */
+}
+
+
