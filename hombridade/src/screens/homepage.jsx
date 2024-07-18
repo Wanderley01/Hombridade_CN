@@ -41,9 +41,7 @@ function HomePage() {
                 </div>
 
                 <div className='slidehead'>
-                    <div class="carousel">
-                        <Carrossel/>
-                    </div>
+                        <Carrossel/> 
                 </div>
 
 

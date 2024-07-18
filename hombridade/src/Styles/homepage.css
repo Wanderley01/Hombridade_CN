@@ -168,7 +168,7 @@ h1 {
 }
 
 .slidehead {
-    background-color: white;
+    background-color:"";
     width: 60%;
     height: 100%;
     overflow: hidden;
@@ -176,5 +176,4 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
