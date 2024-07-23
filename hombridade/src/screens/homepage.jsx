@@ -43,8 +43,10 @@ function HomePage() {
                 <div className='slidehead'>
                         <Carrossel/> 
                 </div>
+            </div>
 
-
+            <div className='bodysite'>
+                
             </div>
 
 

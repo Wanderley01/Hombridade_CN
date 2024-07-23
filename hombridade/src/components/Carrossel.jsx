@@ -12,29 +12,29 @@ function Carrossel() {
               <button type="button" data-coreui-target="#carouselExampleCaptions" data-coreui-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-coreui-target="#carouselExampleCaptions" data-coreui-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner rounded-3">
           <div class="carousel-item active">
-            <img src="../src/assets/img/testimg.png" class="d-block w-100" alt="..." />
+            <img src="../src/assets/img/slide.png" class="d-block w-100" alt="..." />
 
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5></h5>
+              <p></p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../src/assets/img/fundoheader.png" class="d-block w-100" alt="..." />
+            <img src="../src/assets/img/slide2.png" class="d-block w-100" alt="..." />
 
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5></h5>
+              <p></p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../src/assets/img/logo.png" class="d-block w-100" alt="..." />
+            <img src="../src/assets/img/slide3.png" class="d-block w-100" alt="..." />
 
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5></h5>
+              <p></p>
             </div>
           </div>
         </div>
