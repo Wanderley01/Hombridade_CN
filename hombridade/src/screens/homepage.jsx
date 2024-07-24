@@ -45,8 +45,15 @@ function HomePage() {
                 </div>
             </div>
 
+            {/* Daqui em diante tera os dois grandes componentes e o fundo modificável*/}
             <div className='bodysite'>
-                
+                <div className='Hombri'>
+                    <h1>Hombridade</h1>
+                </div>
+
+                <div className='Blog'>
+                    <h1>Blog</h1>
+                </div>
             </div>
 
 
